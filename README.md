@@ -1,5 +1,5 @@
 # Deep Diagnosis
-This is a research oriented project where we have tried to use machine learning models for classification tasks using images as an input. We've used CNN model for the task of image analysis and classification. The architecture of our model is a standard architecture used by many in the industry. The architecture is called Inception model.
+This is a research oriented project where we have tried to use machine learning models for classification tasks using images as an input. We've used CNN model for the task of image analysis and classification. The architecture of our model is a standard architecture used by many in the industry. The architecture is called Inception model().
 
 The model architecture can be found here => <a href="http://www.cv-foundation.org/openaccess/content_cvpr_2015/papers/Szegedy_Going_Deeper_With_2015_CVPR_paper.pdf">Inception Model</a><br>
 We've trained the model on respective datasets and pickled them for easy use.
@@ -14,7 +14,7 @@ Information regarding the datasets can be found in the [References](#references)
 * [Integration](#integration)
 * [References](#references)
 * [Authors](#authors)
-* [Liscense](#liscense)
+* [License](#license)
 
 ## Requirements
 * Python 3.X.X
@@ -81,7 +81,7 @@ python main.py
 * Download the trained model pickels from the following link => <a href="https://drive.google.com/drive/folders/0B0eNSOFz7zL7Q2JqN0E5R2NZNXM?usp=sharing">Trained Models</a>
 * Want to train your own Inception model? Check out this link : <a href="https://github.com/tensorflow/models/tree/master/inception">Training Inception!</a>
 * We used two datasets for training our models.
-  * We used the [ISIC](https://isic-archive.com/) dataset for skin lesion classification task. It is a set of 5 different datasets out of which we used only 4 and skipped the one names "ISIC_SONIC-1". We still had a very skewed data proportions (around 1500 images for benign category and only 600 images for malignant). So we went ahead and wrote a python script to flip all the images in the malignant folder to double the size and add new features.
+  * We used the [ISIC](https://isic-archive.com/) dataset for skin lesion classification task. It is a set of 5 different datasets out of which we used only 4 and skipped the one names "ISIC_SONIC-1". We still had a very skewed data proportions (around 1500 images for benign category and only 600 images for malignant). So we went ahead and wrote a python script to flip all the images in the malignant folder to double the size thereby solving the problem of overfitting and add new features.
     > We recieved a 79% accuracy on this model.
   * The second dataset that we used was from this [Kaggle competition](https://www.kaggle.com/c/diabetic-retinopathy-detection). We used only 6000 images from this due to time constraints.
     > This model gave us an accuracy of 68%.
@@ -90,13 +90,13 @@ python main.py
   
 
 ## Authors
+* [Maaz Khan](https://github.com/maazrk)
 * [Danish Shah](https://github.com/DanishShah)
 * [Jawad Shaikh](https://github.com/jawadsh123)
 * [Afzal Sayed]()
 * [Aditya Mishra]()
-* [Maaz Khan](https://github.com/maazrk)
 
-## Liscense
+## License
 This project is licensed under <a href="https://github.com/DanishShah/DeepDiagnosis/blob/master/LICENSE.txt">MIT License</a>
 
 
